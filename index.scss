@@ -1,0 +1,92 @@
+$right-margin: 5px;
+$btn-width: 50px;
+$btn-height: 40px;
+
+#calculator {
+  width: 300px;
+  height: 420px;
+  border-radius: 5%;
+  font-size: 18px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  background-color: lightgoldenrodyellow;
+
+  #title {
+    margin-top: 10px;
+  }
+
+  #result-screen {
+    margin: 10px;
+    padding: $right-margin;
+    background-color: rgb(190,190,165);
+    text-align: right;
+
+    #result {
+      font-size: 35px;
+    }
+
+    #expression {
+      font-size: 15px;
+    }
+  }
+
+  .buttons {
+
+
+    margin: $right-margin*3 $right-margin*2;
+    padding-left: $right-margin;
+
+
+    .num-button {
+      width: $btn-width;
+      height: $btn-height;
+      margin: 0px $right-margin*3 $right-margin*3 0;
+      background-color: rgb(51,51,51);
+      color: white;
+      cursor: pointer;
+      border-radius: 20%;
+      box-shadow: 0 4px;
+    }
+
+    .num-button:focus {
+      outline: 0;
+    }
+
+    .num-button:active {
+      transform: translateY(4px);
+    }
+
+    .sys-button {
+      @extend .num-button;
+      background-color: rgb(167,45,69);
+    }
+
+    .zero-button {
+      @extend .num-button;
+      position: absolute;
+      left: $right-margin*3;
+      width: $btn-width*2+20px;
+    }
+
+    .dot-button {
+      @extend .num-button;
+      position: relative;
+      left: $right-margin*7;
+    }
+
+    .equal-button {
+      @extend .num-button;
+      //margin: -50px $right-margin*3 $right-margin*3 0;
+      position: absolute;
+      //top: -50px;
+      bottom: 5px;
+      right: 7px;
+
+      height: $btn-height*2+10px;
+    }
+  }
+}
