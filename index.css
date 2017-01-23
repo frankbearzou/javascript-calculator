@@ -1,0 +1,54 @@
+#calculator {
+  width: 300px;
+  height: 420px;
+  border-radius: 5%;
+  font-size: 18px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  background-color: lightgoldenrodyellow; }
+  #calculator #title {
+    margin-top: 10px; }
+  #calculator #result-screen {
+    margin: 10px;
+    padding: 5px;
+    background-color: #bebea5;
+    text-align: right; }
+    #calculator #result-screen #result {
+      font-size: 35px; }
+    #calculator #result-screen #expression {
+      font-size: 15px; }
+  #calculator .buttons {
+    margin: 15px 10px;
+    padding-left: 5px; }
+    #calculator .buttons .num-button, #calculator .buttons .sys-button, #calculator .buttons .zero-button, #calculator .buttons .dot-button, #calculator .buttons .equal-button {
+      width: 50px;
+      height: 40px;
+      margin: 0px 15px 15px 0;
+      background-color: #333333;
+      color: white;
+      cursor: pointer;
+      border-radius: 20%;
+      box-shadow: 0 4px; }
+    #calculator .buttons .num-button:focus, #calculator .buttons .sys-button:focus, #calculator .buttons .zero-button:focus, #calculator .buttons .dot-button:focus, #calculator .buttons .equal-button:focus {
+      outline: 0; }
+    #calculator .buttons .num-button:active, #calculator .buttons .sys-button:active, #calculator .buttons .zero-button:active, #calculator .buttons .dot-button:active, #calculator .buttons .equal-button:active {
+      transform: translateY(4px); }
+    #calculator .buttons .sys-button {
+      background-color: #a72d45; }
+    #calculator .buttons .zero-button {
+      position: absolute;
+      left: 15px;
+      width: 120px; }
+    #calculator .buttons .dot-button {
+      position: relative;
+      left: 35px; }
+    #calculator .buttons .equal-button {
+      position: absolute;
+      bottom: 5px;
+      right: 7px;
+      height: 90px; }
+
+/*# sourceMappingURL=index.css.map */
